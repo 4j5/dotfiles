@@ -1,0 +1,78 @@
+# apt 
+alias aptu="sudo apt-get update && sudo apt-get upgrade"
+alias apti="sudo apt-get install "
+alias apts="apt-cache search "
+alias aptc="sudo apt-get clean"
+
+# colorize grep and ls
+alias grep="grep --color=auto"
+alias ls="ls -p --color=auto"
+
+# List
+alias ll='ls -l'
+alias la='ls -A'
+alias l='ls -CF'
+alias lal='ls -al'
+
+# manipulate files verbosely (print log of what happened)
+alias cp="cp -v"
+alias mv="mv -v"
+alias rm="rm -v"
+
+# open multiple files in Vim tabs
+alias vim="vim -p"
+
+# look up LaTeX documentation
+which texdef &> /dev/null && alias latexdef="texdef --tex latex"
+
+# Easily download an MP3 from youtube on the command line
+which youtube-dl &> /dev/null && alias youtube-mp3="youtube-dl --extract-audio --audio-format mp3"
+
+# ----- aliases that are actually full-blown commands -------------------------
+
+# list disk usage statistics for the current folder
+alias duls="du -h -d1 | sort -hr"
+
+# print my IP
+alias ip="curl curlmyip.com"
+
+# resolve a symlink in the PWD to a fully qualified directory
+alias resolve='cd "`pwd -P`"'
+
+# Git commands
+alias ga="git add"
+alias gap="git add --patch"
+
+alias gc="git commit"
+alias gca="git commit -a"
+alias gcm="git commit -m"
+alias gcam="git commit -am"
+
+alias gs="git status"
+alias gd="git diff"
+alias gdw="git diff --color-words"
+
+# resuable format strings
+GIT_PRETTY_FORMAT="--pretty=\"%C(bold green)%h%Creset%C(auto)%d%Creset %s\""
+GIT_PRETTY_FORMAT_AUTHOR="--pretty=\"%C(bold green)%h%Creset %C(yellow)%an%Creset%C(auto)%d%Creset %s\""
+
+# pretty Git log
+alias gl="git log --graph $GIT_PRETTY_FORMAT"
+# pretty Git log, all references
+alias gll='gl --all'
+# pretty Git log, show authors
+alias gla="git log --graph $GIT_PRETTY_FORMAT_AUTHOR"
+# pretty Git log, all references, show authors
+alias glla='gla --all'
+
+# Shortcuts
+alias d="cd ~/Documents/Dropbox"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias p="cd ~/source/projects"
+alias g="git"
+alias h="history"
+alias j="jobs"
+alias cls="clear"
+
+
