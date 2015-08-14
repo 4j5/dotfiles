@@ -3,7 +3,7 @@
 #Vars
 dotDir=~/dotfiles
 oldDir=~/dotfiles_old
-dFile="aliases bashrc clusterssh tmux.conf tmuxinator vim vimrc zprezto"
+files="aliases bashrc clusterssh tmux.conf tmuxinator vim vimrc zprezto"
 
 #Backup
 
@@ -22,5 +22,5 @@ echo "Moving any existing dotfiles from ~ to $oldDir"
 for file in $files; do
     mv ~/.$file $oldDir/
     echo "Creating symlink to $file in home directory."
-    ln -s $dotDir/$file ~/.$file
+    ln -s $dotDir/.$file ~/.$file
 done
