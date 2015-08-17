@@ -3,7 +3,7 @@
 #Vars
 dotDir=~/dotfiles
 oldDir=~/dotfiles_old
-files="aliases bashrc clusterssh tmux.conf tmuxinator vim vimrc zprezto"
+files="aliases bashrc clusterssh gitconfig tmux.conf tmuxinator vim vimrc zprezto"
 
 #Backup
 
