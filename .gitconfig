@@ -3,3 +3,9 @@
 	email = andy@helixnexus.uk
 [core]
 	editor = vim
+[diff]
+	tool = vimdiff
+[mergetool]
+	prompt = false
+[merge]
+	conflictstyle = diff3
