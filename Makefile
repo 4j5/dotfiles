@@ -11,7 +11,28 @@ install-tmux:
 
 install-git:
 		ln -fs $(DOT_HOME)/.gitconfig ~/.gitconfig
-
+		git remote add -f a.vim https://github.com/vim-scripts/a.vim.git 
+		git remote add -f ctrlp.vim https://github.com/kien/ctrlp.vim.git 
+		git remote add -f delimitMate https://github.com/Raimondi/delimitMate.git 
+		git remote add -f dockerfile.vim https://github.com/ekalinin/Dockerfile.vim.git 
+		git remote add -f nerdtree https://github.com/scrooloose/nerdtree.git 
+		git remote add -f snipmate.vim https://github.com/msanders/snipmate.vim.git
+		git remote add -f syntastic https://github.com/scrooloose/syntastic.git 
+		git remote add -f tabular https://github.com/godlygeek/tabular.git 
+		git remote add -f tagbar https://github.com/majutsushi/tagbar.git 
+		git remote add -f tmuxline.vim https://github.com/edkolev/tmuxline.vim.git 
+		git remote add -f vim-better-whitespace https://github.com/ntpeters/vim-better-whitespace.git 
+		git remote add -f vim-colors-solarized https://github.com/altercation/vim-colors-solarized.git 
+		git remote add -f vim-easy-tags https://github.com/xolox/vim-easytags.git 
+		git remote add -f vim-fugitive https://github.com/tpope/vim-fugitive.git 
+		git remote add -f vim-gitgutter https://github.com/airblade/vim-gitgutter.git 
+		git remote add -f vim-misc https://github.com/xolox/vim-misc.git
+		git remote add -f vim-nerdtree-tabs https://github.com/jistr/vim-nerdtree-tabs.git 
+		git remote add -f vim-superman https://github.com/jez/vim-superman.git 
+		git remote add -f vim-surround https://github.com/tpope/vim-surround.git
+		git remote add -f vim-tmux-navigator https://github.com/christoomey/vim-tmux-navigator.git 
+		git remote add -f youCompleteMe https://github.com/Valloric/YouCompleteMe.git 
+		git remote add -f vim-scala https://github.com/derekwyatt/vim-scala.git
 update: update-vim
 
 update-vim:
