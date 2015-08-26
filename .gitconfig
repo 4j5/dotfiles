@@ -9,3 +9,6 @@
 	prompt = false
 [merge]
 	conflictstyle = diff3
+[alias]
+	# remove a file from index
+	unadd = git reset HEAD
