@@ -42,8 +42,10 @@ install-git:
 #		git remote add -f youCompleteMe https://github.com/Valloric/YouCompleteMe.git 
 #		git remote add -f vim-scala https://github.com/derekwyatt/vim-scala.git
 
+		git subtree add --prefix vim/bundle/a.vim a.vim master --squash
 		git subtree add --prefix vim/bundle/ctrlp.vim ctrlp.vim master --squash
 		git subtree add --prefix vim/bundle/delimitMate delimitMate master --squash
+		git subtree add --prefix vim/bundle/dockerfile.vim dockerfile.vim master --squash
 		git subtree add --prefix vim/bundle/nerdtree nerdtree master --squash
 		git subtree add --prefix vim/bundle/snipmate.vim snipmate.vim master --squash
 		git subtree add --prefix vim/bundle/syntastic syntastic master --squash
@@ -69,7 +71,7 @@ update-vim:
 		git subtree pull --prefix vim/bundle/a.vim a.vim master --squash
 		git subtree pull --prefix vim/bundle/ctrlp.vim ctrlp.vim master --squash
 		git subtree pull --prefix vim/bundle/delimitMate delimitMate master --squash
-		git subtree pull --prefix vim/bundle/dockerfile.vim master --squash
+		git subtree pull --prefix vim/bundle/dockerfile.vim dockerfile.vim master --squash
 		git subtree pull --prefix vim/bundle/nerdtree nerdtree master --squash
 		git subtree pull --prefix vim/bundle/snipmate.vim snipmate.vim master --squash
 		git subtree pull --prefix vim/bundle/syntastic syntastic master --squash
