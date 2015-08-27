@@ -12,3 +12,7 @@
 [alias]
 	# remove a file from index
 	unadd = git reset HEAD
+	# stands for "subtree add"
+	sba = "!f() { git subtree add --prefix $1 $2 master --squash; }; f"
+	# stands for "subtree update"
+	sbu = "!f() { git subtree pull --prefix $1 $2 master --squash; }; f"
