@@ -74,5 +74,7 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 alias cls="clear"
-
-
+alias mux="tmuxinator.ruby2.2"
+alias dockerui="sudo docker run -d -p 9000:9000 --privileged -v /var/run/docker.sock:/var/run/docker.sock dockerui/dockerui"
+alias hosts="sudo vi /etc/hosts"
+alias zup="sudo zypper up"

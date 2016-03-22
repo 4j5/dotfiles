@@ -1,6 +1,6 @@
 [user]
 	name = Andy Smith
-	email = andy@helixnexus.uk
+	email = andy@mmkdigital.com
 [core]
 	editor = vim
 [diff]
@@ -16,3 +16,4 @@
 	sba = "!f() { git subtree add --prefix $1 $2 master --squash; }; f"
 	# stands for "subtree update"
 	sbu = "!f() { git subtree pull --prefix $1 $2 master --squash; }; f"
+	dsf = "!git diff --color $@ | diff-so-fancy"

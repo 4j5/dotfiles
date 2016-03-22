@@ -1,0 +1,40 @@
+# ~/.tmuxinator/admin.yml
+
+name: work
+root: ~/
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+# pre: sudo /etc/rc.d/mysqld start
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: logs
+
+# Controls whether the tmux session should be attached to automatically. Defaults to true.
+# attach: false
+
+# Runs after everything. Use it to attach to tmux with custom options etc.
+# post: tmux -CC attach -t admin
+
+windows:
+  - admin:
+      layout: 5172,211x53,0,0{106x53,0,0[106x20,0,0,0,106x17,0,21,1,106x14,0,39,2],104x53,107,0[104x27,107,0,3,104x25,107,28,4]}
+      panes:
+        - htop
+        - mysql -uroot
+        - cd  $HOME/projects
+        - apacheErrors:
+          - multitail -c -i /var/log/apache2/error_log
+        - apacheLog:
+          - multitail -c -i /var/log/apache2/access_log

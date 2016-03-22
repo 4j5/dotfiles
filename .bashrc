@@ -4,6 +4,11 @@
 
 export EDITOR='vim'
 
+# Sudo autocomplete
+if [ "$PS1" ]; then
+complete -cf sudo
+fi
+
 
 # If not running interactively, don't do anything
 case $- in
@@ -115,6 +120,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+. ~/dotfiles/.docker-completion.sh
+
 vman() {
 	vim -c "SuperMan $*"
 	if [ "$?" != "0" ]; then
@@ -125,5 +132,3 @@ vman() {
 if [ "$PS1" ]; then
 	complete -cf sudo
 fi
-
-
