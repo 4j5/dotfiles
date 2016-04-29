@@ -12,9 +12,9 @@ set hlsearch
 syntax on
 
 set background=dark
-colorscheme solarized
-"colorscheme molokai
-"let g:molokai_original = 1
+"colorscheme solarized
+colorscheme molokai
+let g:molokai_original = 1
 
 set listchars=tab:▸\ ,eol:¬
 "highlight NonText guifg=#002b46
@@ -54,7 +54,7 @@ let g:easytags_async = 1
 let g:easytags_dynamic_files = 2
 let g:easytags_resolve_links = 1
 let g:easytags_suppress_ctags_warning = 1
-      
+
 " ----- majutsushi/tagbar settings -----
 " Open/close tagbar with \b
 nmap <silent> <leader>b :TagbarToggle<CR>
