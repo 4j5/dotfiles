@@ -9,7 +9,7 @@ if [ "$PS1" ]; then
 complete -cf sudo
 fi
 :
-PATH=$PATH~/bin/PhpStorm-145.258.2/bin
+PATH=$PATH:~/bin/PhpStorm-145.258.2/bin
 
 
 # If not running interactively, don't do anything
