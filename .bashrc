@@ -126,4 +126,4 @@ if [ "$PS1" ]; then
 	complete -cf sudo
 fi
 
-
+export PATH=$PATH:~/.config/composer/vendor/bin
